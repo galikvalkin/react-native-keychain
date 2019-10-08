@@ -5,7 +5,6 @@ import android.content.SharedPreferences;
 import android.support.annotation.NonNull;
 import android.util.Base64;
 
-import com.facebook.react.bridge.ReactApplicationContext;
 import com.oblador.keychain.cipherStorage.CipherStorage.EncryptionResult;
 import com.oblador.keychain.cipherStorage.CipherStorageFacebookConceal;
 
@@ -26,7 +25,7 @@ public class PrefsStorage {
 
     private final SharedPreferences prefs;
 
-    public PrefsStorage(ReactApplicationContext reactContext) {
+    public PrefsStorage(Context reactContext) {
         this.prefs = reactContext.getSharedPreferences(KEYCHAIN_DATA, Context.MODE_PRIVATE);
     }
 
