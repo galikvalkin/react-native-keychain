@@ -1,7 +1,7 @@
 package com.oblador.keychain.cipherStorage;
 
 import android.os.Build;
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 import android.content.Context;
 
 import com.facebook.android.crypto.keychain.AndroidConceal;
